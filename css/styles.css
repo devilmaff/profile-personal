@@ -5,3 +5,6 @@
     background-repeat: no-repeat;
     padding: 150px 0;
 }
+.nav-link:hover {
+    background-color: aqua;
+}
