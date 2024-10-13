@@ -1,10 +1,6 @@
 
 .banner{
-    background-image: url(/personalweb/image/3.avif);
+    background-image: url(../image/3.avif);
     background-size: cover;
-    background-repeat: no-repeat;
     padding: 150px 0;
-}
-.nav-link:hover {
-    background-color: aqua;
 }
