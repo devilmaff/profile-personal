@@ -1,29 +1,34 @@
 
 body{
     background: url(../images/WhatsApp\ Image\ 2025-01-09\ at\ 17.41.37_55acda8e.jpg);
-    background-color: #eeee;
+    background-color:pink;
+    
     margin=0;
     padding: 50px;
 }
 header{
+    position:fixed;
     padding: 20px;
     display: flex;
     justify-content:center ;
-    colour:white;
-    padding:5px  ;
-    text-align: center;
+    text-align:end;
+    color:white;
     
-
+    width: 90%;
+   background-color: black;
 }
 
 
 ul {
     list-style: none;
-    
+    display: flex;
+    justify-content:flex-end ;
+    align-items: flex-end;
 }
 ul li {
     display: inline-block;
     padding: 0px 50px;
+   
 }
 ul li a:hover{
     background-color: rgb(29, 17, 118);
@@ -42,16 +47,18 @@ ul li a:hover{
 }
 
 button:hover{
-    background-color: blue;
+    color:black;
+    opacity: 70%;
 }
 footer{
-   
+    background-color: black;
     color:white;
     text-align: center;
-    padding:15px;
+    padding: 15px;
     position:fixed;
     bottom: 0;
-    width: 100%; 
+    width: 90%;
+
 }
 .two{
     padding:30px;
@@ -60,13 +67,13 @@ footer{
     padding:20px;
 }
 .title{
-    padding:10px;
+    padding:10px 0px;
 }
 .date{
-    padding: 10px;
+    padding: 30px 10px;
 }
 .title2{
-    padding: 20px 0px;
+    padding: 20px 10px;
 }
 .back{
     background-color: blue;
@@ -86,4 +93,14 @@ footer{
 }
 button{
     padding:0px;
+}
+.bu>a{
+    padding: 20px;
+}
+.bu{
+    padding: 0%;
+}
+
+button{
+    padding: 10%;
 }
