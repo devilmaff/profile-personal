@@ -21,9 +21,7 @@ header{
 
 ul {
     list-style: none;
-    display: flex;
-    justify-content:flex-end ;
-    align-items: flex-end;
+    
 }
 ul li {
     display: inline-block;
