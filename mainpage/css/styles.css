@@ -1,6 +1,6 @@
 
 .banner{
-    background-image: url(/mainpage/image/3.avif);
+    background: url(/mainpage/image/3.avif);
     background-size: cover;
     padding: 150px 0;
 }
