@@ -7,7 +7,7 @@ body{
     padding: 50px;
 }
 header{
-    position:fixed;
+    
     padding: 20px;
     display: flex;
     justify-content:center ;
@@ -53,7 +53,7 @@ footer{
     color:white;
     text-align: center;
     padding: 15px;
-    position:fixed;
+   
     bottom: 0;
     width: 90%;
 
