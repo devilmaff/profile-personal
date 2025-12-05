@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khader Husain Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="/script.js" defer></script>
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #020c1b;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            text-shadow: 0 0 10px cyan;
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            top: 0;
+            left: 0;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px cyan;
+        }
+
+        /* PROJECT GRID */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(0, 255, 255, 0.08);
+            border: 1px solid cyan;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+
+        }
+
+        .card:hover {
+            background: rgba(0, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 1px solid cyan;
+            text-decoration: none;
+            color: cyan;
+        }
+
+        .btn:hover {
+            background: cyan;
+            color: #000;
+        }
+
+
+        .project-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 1px solid cyan;
+        }
+
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: cyan;
+            border-top: 1px solid cyan;
+            opacity: 0.8;
+        }
+
+        /* ========================= */
+        /*       PREVIEW WINDOW      */
+        /* ========================= */
+
+        .preview-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            z-index: 9999;
+        }
+
+        .preview-box {
+            width: 90%;
+            max-width: 600px;
+            background: #0b0b0b;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid cyan;
+            box-shadow: 0 0 25px cyan;
+            animation: zoomIn .3s ease;
+            text-align: center;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.7);
+                opacity: .2;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .preview-img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid cyan;
+            margin-bottom: 10px;
+        }
+
+        .close-btn {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 8px 20px;
+            background: red;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .open-btn {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgb(30, 255, 0);
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .close-btn:hover {
+            background: rgb(255, 60, 60);
+        }
+
+        .open-btn:hover {
+            background: rgb(4, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <section id="projects">
+        <h2>Web Development Projects</h2>
+
+        <div class="project-grid">
+            <div class="card">
+                <img src="/FSD projects/Analog clock/analogclock.png" class="project-img">
+                <h3>Analog Clock</h3>
+                <p>A Morden Analog Clock with creative design</p>
+                <a class="btn view-btn" data-link="/FSD projects/Analog clock/analogclock.html">View</a>
+            </div>
+
+            <div class="card">
+                <img src="/FSD projects/calculator/calculator.png" class="project-img">
+                <h3>Calculator</h3>
+                <p>A web Calculator redy to use</p>
+                <a class="btn view-btn" data-link="/FSD projects/calculator/calculator.html">View</a>
+            </div>
+            <div class="card">
+                <img src="/FSD projects/wikipedia/images/wikipedia.png" class="project-img">
+                <h3>Graphic Designing</h3>
+                <p>Logos, posters, banners, thumbnails, branding kits.</p>
+                <a class="btn view-btn" data-link="/FSD projects/wikipedia/html/index.html">View</a>
+            </div>
+
+            <div class="card">
+                <img src="/FSD projects/text to speach/text-to-speech.png" class="project-img">
+                <h3>Video Editing</h3>
+                <p>Reels, cinematic edits, product promos, YouTube content.</p>
+                <a class="btn view-btn" data-link="/FSD projects/text to speach/index.html">View</a>
+            </div>
+            <div class="card">
+                <img src="/FSD projects/writing_bord/writing-bord.png" class="project-img">
+                <h3>Video Editing</h3>
+                <p>Reels, cinematic edits, product promos, YouTube content.</p>
+                <a class="btn view-btn" data-link="/FSD projects/writing_bord/index.html">View</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>© 2025 Khader Husain — All Rights Reserved</footer>
+
+    <!-- PREVIEW WINDOW -->
+    <div class="preview-overlay" id="previewOverlay">
+        <div class="preview-box">
+            <img id="previewImg" class="preview-img">
+            <h2 id="previewTitle"></h2>
+            <p id="previewDesc"></p>
+            <span class="open-btn" id="openPreview">Open</span>
+            <span class="close-btn" id="closePreview">Close</span>
+        </div>
+    </div>
+
+    <script>
+        // Handle Preview Opening
+        const viewBtns = document.querySelectorAll(".view-btn");
+        const overlay = document.getElementById("previewOverlay");
+
+        const previewImg = document.getElementById("previewImg");
+        const previewTitle = document.getElementById("previewTitle");
+        const previewDesc = document.getElementById("previewDesc");
+
+        let currentLink = null;
+
+        viewBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+                let card = btn.parentElement;
+                let img = card.querySelector("img").src;
+                let title = card.querySelector("h3").innerText;
+                let desc = card.querySelector("p").innerText;
+
+                // fetch project link
+                currentLink = btn.getAttribute("data-link");
+
+                previewImg.src = img;
+                previewTitle.innerText = title;
+                previewDesc.innerText = desc;
+
+                overlay.style.display = "flex";
+            });
+        });
+
+        // Close Button
+        document.getElementById("closePreview").onclick = () => {
+            overlay.style.display = "none";
+        };
+
+        // Close on outside click
+        overlay.addEventListener("click", e => {
+            if (e.target === overlay) overlay.style.display = "none";
+        });
+
+        // OPEN PROJECT FILE
+        document.getElementById("openPreview").onclick = () => {
+            if (currentLink) {
+                window.open(currentLink, "_blank");
+            }
+        };
+    </script>
+
+</body>
+
+</html>
